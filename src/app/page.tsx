@@ -1,5 +1,5 @@
 "use client"
-import { useLoginWithAbstract, useAbstractClient } from "@abstract-foundation/agw-react"
+import { useLoginWithAbstract } from "@abstract-foundation/agw-react"
 import { useAccount, useSignMessage } from "wagmi"
 import { useSearchParams } from "next/navigation"
 import { useEffect, useState, Suspense } from "react"
