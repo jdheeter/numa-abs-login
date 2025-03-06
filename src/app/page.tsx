@@ -73,8 +73,11 @@ export default function Home() {
     // Auto redirect after success
     useEffect(() => {
       if (status === "success" && !redirectTimer) {
+        console.log("success reached")
         const timer = window.setTimeout(() => {
-          window.location.href = process.env.NEXT_PUBLIC_APP_URL + "?page=profile"
+          console.log("should redirect now")
+          // window.location.href = process.env.NEXT_PUBLIC_APP_URL + "?page=profile"
+          handleReturnToNuma()
         }, 3000)
         setRedirectTimer(timer)
         return () => window.clearTimeout(timer)
